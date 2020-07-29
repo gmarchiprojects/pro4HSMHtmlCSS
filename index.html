@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Formulário de Restaurantes</title>
+</head>
+<body>
+    <h1 id="titulo">Cadastro de Restaurantes</h1>
+
+  <form action="" method="GET" class="form">
+    <fieldset class="field" id="cdRestaurante">
+    <legend class="legendas"><h2>Cadastre seu Restaurante</h2></legend>
+        <label for=""><strong>Nome do Restaurante: </strong><input placeholder="Habibs"type="text" required></label><br/><br/>
+        <label for=""><strong>Endereço: </strong><input placeholder="Rua da Padroeira, 999" type="text" required></label><br><br>
+        <label for=""><strong>Telefone: </strong><input placeholder="(DDD) 99999-9999"type="number" required></label>
+       <!-- Categorias -->
+        <p><strong>Categoria: </strong>
+        <input type="radio" id="categoria" name="categoria" value="pizza"><label for="pizza">Pizzaria </label>
+        <input type="radio" id="categoria" name="categoria" value="japonesa"><label for="pizza">Japonesa </label>
+        <input type="radio" id="categoria" name="categoria" value="Massas"><label for="pizza">Massa </label>
+        <input type="radio" id="categoria" name="categoria" value="caseira"><label for="pizza">Caseira </label> </p>
+        <!-- Fim Categoria -->
+            <!-- Lista Faixa Preço -->
+            <p><strong>Faixa de Preços: </strong>
+            <select name="faixadepreco" id="faixadepreco">
+                <option value="$">$</option>
+                <option value="$$">$$</option>
+                <option value="$$$">$$$</option>
+                <option value="$$$$">$$$$</option>
+            </select></p>
+        <!-- Lista Faixa Preço -->
+    </fieldset>
+    <fieldset class="field" id="experiencia">
+        <legend><h2>Conte sobre sua expêriencia</h2></legend>
+        <label for="">O que você pediu? <input type="text"></label><br><br>
+        <label for="">Quanto você gastou? <input type="text"></label><br>
+        <p><strong>A entrega foi rápida: </strong>
+            <input type="radio" id="entrega" name="categoria" value="sim"><label for="entrega">Sim </label>
+            <input type="radio" id="entrega" name="categoria" value="nao"><label for="entrega">Não </label></p>
+            <p><strong>Observações</strong></p>
+            <textarea name="observacoes" id="observacoes" cols="60" rows="5"></textarea>
+    </fieldset>
+    <input type="button" value="Cancelar" class="buttons" id="cancelar"><input type="submit" value="Enviar"class="buttons"id="enviar">
+    
+  </form>  
+
+  
+</body>
+</html>
